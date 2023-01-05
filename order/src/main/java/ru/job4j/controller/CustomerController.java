@@ -63,7 +63,7 @@ public class CustomerController {
      * @param productsId выбранные продукты в заказе
      * @return сохраненный заказ
      */
-    @PostMapping("/customer/order/{id}")
+    @PostMapping("/order/{id}")
     public ResponseEntity<Order> createOrder(@RequestBody Order order, @PathVariable int id,
                                              @RequestParam(name = "productsId", required = false)
                                              List<Integer> productsId) {

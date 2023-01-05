@@ -1,4 +1,4 @@
-package ru.job4j.food.model;
+package ru.job4j.model;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package ru.job4j.food.model;
+package ru.job4j.model;
 
 import lombok.*;
 
@@ -6,10 +6,8 @@ import lombok.*;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class Payment {
+public class User {
     @EqualsAndHashCode.Include
     private int id;
     private String name;
-    private Order order;
-    private User user;
 }
