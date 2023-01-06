@@ -45,7 +45,7 @@ public class DishController {
         return new ResponseEntity<>(service.update(dish), HttpStatus.OK);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/")
     public ResponseEntity<Boolean> delete(@RequestParam int id) {
         return new ResponseEntity<>(service.deleteDishById(id), HttpStatus.OK);
     }
